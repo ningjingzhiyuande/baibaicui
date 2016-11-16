@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>订单结算</title>
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="top_box">
+        <div class="index_box">
+            <span class="wz">亲，欢迎进入百淬中国商城！</span><a href="login.html">请登录</a><span class="fg">|</span><a href="register.html">免费注册</a><span class="fg">|</span>
+            <div class="mobile_con">
+                <span class="ic_mobile">手机逛百淬</span>
+                <div class="code_pd">
+                    <div id="code"></div>
+                </div>
+            </div>
+            <span class="right"><a href="">我的百淬</a><span class="fg">|</span><a href="my_car.html" id="shopcartId">我的购物车(<span class="mes_nub">4</span>)</a><span class="fg">|</span><a href="">收藏夹</a><span class="fg">|</span><a href="help.html">帮助中心</a></span>
+        </div>
+    </div>
+    <div class="head_box">
+        <div class="index_box">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <div class="nav_box">
+                <ul id="nav">
+                    <li class="nLi"><h3><a href="index.html">百淬首页</a></h3></li>
+                    <li class="nLi">
+                        <h3><a href="ydbj.html">运动补给<em></em></a></h3>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="product_list.html">运动饮料</a></li>
+                            <li><a href="product_list.html">乳清蛋白</a></li>
+                            <li><a href="product_list.html">植物蛋白</a></li>
+                            <li><a href="product_list.html">恢复配方</a></li>
+                            <li><a href="product_list.html">能量棒</a></li>
+                            <li><a href="product_list.html">饮料杯</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi"><h3><a href="ydzb.html">运动周边</a></h3></li>
+                    <li class="nLi"><h3><a href="bcsq.html">百淬社区</a></h3></li>
+                    <li class="nLi"><h3><a href="news.html">最新动态</a></h3></li>
+                    <li class="nLi"><h3><a href="dzzs.html">定制专属</a></h3></li>
+                    <li class="nLi"><h3><a href="ppgs.html">品牌故事</a></h3></li>
+                    <li class="search_li"><a href="search.html" class="search_btn"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="index_box">
+        <div class="ot_title_box"><span class="ic_2">订单结算</span></div>
+        <div class="shopping_process">
+            <div class="process_con">
+                <div class="title"><span class="ic_1">选择收货地址</span><a href="javascript:void(0);" class="add_address">+新增收货地址</a></div>
+                <div class="">
+                    <ul class="address_item">
+                        <li class="current"><span class="n_1"><input type="radio" name="address-item" class="orderBox" checked="true">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
+                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
+                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
+                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
+                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
+                    </ul>
+                    <p class="more_address"><a href="javascript:void(0);">更多地址</a></p>
+                </div>
+            </div>
+            <div class="blank10"></div>
+            <div class="process_con">
+                <div class="title"><span class="ic_2">支付方式</span></div>
+                <div class="pay_ment">
+                    <ul>
+                        <li>
+                            <label title="支付宝"><input name="payment" type="radio" checked="checked"><b><img src="images/pay_pt1.jpg" alt=""></b></label>
+                        </li>
+                        <li>
+                            <label title="微信"><input name="payment" type="radio"><b><img src="images/pay_pt2.jpg" alt=""></b></label>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="process_con">
+                <div class="title"><span class="ic_3">商品清单</span></div>
+                <table class="order_table_2">
+                    <tr>
+                        <th width="16%">商品信息</th>
+                        <th width="24%">&nbsp;</th>
+                        <th width="15%">单价(元)</th>
+                        <th width="15%">数量</th>
+                        <th>小计</th>
+                        <th>货物情况</th>
+                    </tr>
+                    <tr class="tr_bg_1">
+                        <td class="infor_pt"><a href=""><img src="images/product_pt13.png" alt=""></a></td>
+                        <td class="tal">
+                            BioSteel(百淬)高效能运动饮料固体饮料冲剂14条/盒
+                        </td>
+                        <td>199.00</td>
+                        <td>1</td>
+                        <td>199.00</td>
+                        <td>有货</td>
+                    </tr>
+                    <tr>
+                        <td class="blank" colspan="6"></td>
+                    </tr>
+                    <tr class="tr_bg_1">
+                        <td class="infor_pt"><a href=""><img src="images/product_pt13.png" alt=""></a></td>
+                        <td class="tal">
+                            BioSteel(百淬)高效能运动饮料固体饮料冲剂14条/盒
+                        </td>
+                        <td>199.00</td>
+                        <td>1</td>
+                        <td>199.00</td>
+                        <td>有货</td>
+                    </tr>
+                    <tr>
+                        <td class="blank" colspan="6"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="process_con">
+                <div class="title"><span class="ic_4">优惠券</span></div>
+                <div class="coupon_list">
+                    <ul>
+                        <li>
+                            <div class="con">
+                                <span class="ic"></span>
+                                <p class="price_wz">￥<span class="price">10</span></p>
+                                <p class="wz">满100即可使用</p>
+                            </div>
+                            <div class="cz">
+                                <p class="bh">劵编号：512145775</p>
+                                <p class="tac"><a href="" class="btn">立即使用</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <span class="ic"></span>
+                                <p class="price_wz">￥<span class="price">10</span></p>
+                                <p class="wz">满100即可使用</p>
+                            </div>
+                            <div class="cz">
+                                <p class="bh">劵编号：512145775</p>
+                                <p class="tac"><a href="" class="btn">立即使用</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <span class="ic"></span>
+                                <p class="price_wz">￥<span class="price">10</span></p>
+                                <p class="wz">满100即可使用</p>
+                            </div>
+                            <div class="cz">
+                                <p class="bh">劵编号：512145775</p>
+                                <p class="tac"><a href="" class="btn">立即使用</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <span class="ic"></span>
+                                <p class="price_wz">￥<span class="price">10</span></p>
+                                <p class="wz">满100即可使用</p>
+                            </div>
+                            <div class="cz">
+                                <p class="bh">劵编号：512145775</p>
+                                <p class="tac"><a href="" class="btn">立即使用</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <span class="ic"></span>
+                                <p class="price_wz">￥<span class="price">10</span></p>
+                                <p class="wz">满100即可使用</p>
+                            </div>
+                            <div class="cz">
+                                <p class="bh">劵编号：512145775</p>
+                                <p class="tac"><a href="" class="btn">立即使用</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="account_box tar fs16">
+            <p class="wz_3"><span class="red">3</span> 件商品，总商品金额：￥455.00<br />
+            运费：￥10.00<br />
+            服务费：￥0.00<br />
+            商品优惠：￥20.00
+            </p>
+            <p class="wz_4">应付总金额：<span class="all_price_1">￥465.00</span>元</p>
+            <div><a href="shopping_process_2.html" class="red_btn_1">提交订单</a></div>
+        </div>
+        <div class="blank60"></div>
+    </div>
+    <div class="bc_service">
+        <div class="service_list index_box">
+            <ul>
+                <li>
+                    <div class="con n_1">
+                        <p class="name">正品保证</p>
+                        <p class="wz">平台信誉 品牌保证</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_2">
+                        <p class="name">全球直供</p>
+                        <p class="wz">海外货源 购物无境</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_3">
+                        <p class="name">优质品牌</p>
+                        <p class="wz">名品荟萃 优质大牌</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_4">
+                        <p class="name">售后保障</p>
+                        <p class="wz">专业客服 售后无忧</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bc_help">
+        <div class="index_box">
+            <div class="help_list">
+                <dl>
+                    <dt>海外保证</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">海外直供</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">购物须知</a></dd>
+                    <dd><a href="">售后规则</a></dd>
+                    <dd><a href="">帮助中心</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">支付宝支付</a></dd>
+                    <dd><a href="">微信支付</a></dd>
+                    <dd><a href="">银行卡支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd><a href="">平台规则</a></dd>
+                    <dd><a href="">商家入驻</a></dd>
+                    <dd><a href="">服务商入驻</a></dd>
+                    <dd><a href="">关于我们</a></dd>
+                </dl>
+            </div>
+            <div class="tel_pt"><img src="images/tele_pt.png" alt=""></div>
+            <div class="code_pt"><img src="images/code_pt.jpg" alt=""></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bc_copyright_info">版权所有 Copyright(C)2014   百淬商城 </div>
+
+    <!-- 新增收货地址 -->
+    <div class="wrapper_box wrapper_pa dn" id="addAddressPop">
+        <div class="address_pop">
+            <div class="title tac"><span class="ic_1">新增收货地址</span></div>
+            <div class="content">
+                <div class="login_form">
+                    <form id="signupForm" method="post" action="">
+                        <ul>
+                            <li>
+                                <p class="name">收货人</p>
+                                <p class="write_con"><input type="text" class="input_1" maxlength="30" id="username" name="username" placeholder="请输入收货人姓名"></p>
+                            </li>
+                            <li>
+                                <p class="name">联系电话</p>
+                                <p class="write_con"><input type="text" class="input_1" maxlength="20" id="mobile" name="mobile" placeholder="请输入联系电话"></p>
+                            </li>
+                            <li>
+                                <p class="name">所在地区</p>
+                                <div class="region_check" id="distpicker">
+                                    <p class="select_p"><select class="select_year" id="address_1" name="address_1"><option value="">请选择</option><option value="1">北京市</option></select></p>
+                                    <p class="select_p"><select  id="address_2" name="address_2"><option value="">请选择</option><option value="1">北京市</option></select></p>
+                                    <p class="select_p"><select  id="address_3" name="address_3"><option value="">请选择</option><option value="1">同城区</option></select></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="name">详细地址</p>
+                                <p class="write_con"><textarea id="ccomment" name="ccomment" class="text_1" placeholder="请输入详细地址"></textarea></p>
+                            </li>
+                            <li>
+                                <p class="name">邮政编码</p>
+                                <p class="write_con"><input type="text" id="zipCode" name="zipCode" class="input_1" placeholder="请输入邮政编码"></p>
+                            </li>
+                            <li><input type="checkbox" class="swmr_check dn" id="swmrCheck" checked="checked"><label for="swmrCheck" class="label_check on"></label>设置为默认地址</li>
+                            <li class="cz tac"><button class="submit_btn button_1">保存</button><a href="javascript:void(0);" class="huise_btn_1" onClick="closePopFunc(this);">取消</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/swiper.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="text/javascript" src="js/func.js"></script>
+    <script type="text/javascript" src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/distpicker.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/validate-methods.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#distpicker").distpicker({
+            autoSelect: false,
+            placeholder: false
+        });
+
+        $("#signupForm").validate({
+            onfocusout: function(element) {
+                $(element).valid();
+            },
+            errorPlacement: function(error, element) { //错误信息位置设置方法
+                error.appendTo(element.parents(".select_p")); //这里的element是录入数据的对象
+                if(element.parent().attr("class") == "write_con"){
+                    error.appendTo(element.parents("li"));
+                }
+            },
+            submitHandler: function(form){   //表单提交句柄,为一回调函数，带一个参数：form
+                // form.submit();   //提交表单
+                $("#addAddressPop").hide();
+            }, 
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2
+                },
+                mobile: {
+                    required: true,
+                    isMobile : true
+                },
+                address_1: {
+                    required: true,
+                    minlength: 1
+                },
+                address_2: {
+                    required: true,
+                    minlength: 1
+                },
+                address_3: {
+                    required: true,
+                    minlength: 1
+                },
+                ccomment:{
+                    required: true
+                },
+                zipCode:{
+                    required: true,
+                    isZipCode:true
+                }
+                
+            },
+            messages: {
+                username: {
+                    required: "请输入用户名",
+                    minlength: "请至少输入2个字符"
+                },
+                mobile: {
+                    required: "请输入联系电话",
+                    isMobile:"请正确填写您的联系电话"
+                },
+                address_1:{
+                    required: "请选择省份"
+                },
+                address_2:{
+                    required: "请选择城市"
+                },
+                address_3:{
+                    required: "请选择地区"
+                },
+                ccomment: {
+                    required: "请输入详细地址"
+                },
+                zipCode: {
+                    required: "请输入您的邮政编码",
+                    isZipCode:"请正确填写您的邮政编码"
+                }
+            }
+        });
+
+        $(".add_address").click(function(){
+            $(".wrapper_pa").height($(document).height());
+            $(".address_pop .title>span.ic_1").html("新增收货地址");
+            popRemind('addAddressPop');
+            addressTopFunc();
+        });
+
+        $(".update_address").click(function(event){
+            event.stopPropagation();
+            $(".wrapper_pa").height($(document).height());
+            $(".address_pop .title>span.ic_1").html("修改收货地址");
+            popRemind('addAddressPop');
+            addressTopFunc();
+        });
+    })
+    </script>
+</body>
+</html>
