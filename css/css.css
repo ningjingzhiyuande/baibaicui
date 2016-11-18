@@ -61,6 +61,8 @@ ul{ list-style:none;}
 a{ text-decoration:none; color:#555;outline: none;}
 a:hover{ text-decoration:none; color:#cb0006;}
 
+a.blue_btn {color:#3c8bd0;}
+
 /*-----------------------------------主体部分--------------------------------------------*/
 .index_box {width:1200px;margin:0px auto;}
 .white_bg {background: #fff;}
@@ -405,9 +407,10 @@ label.label_check.on,label.all_check_label.on {border: 1px solid #3c8bd0;backgro
 .login_form ul li label.error {color:#999;background: url(../images/tips.png) no-repeat left;padding-left:17px;}
 .login_form ul li p.ts_2 {color:#cb0006;background: url(../images/error.png) no-repeat left;padding-left:17px;}
 .login_form ul li a.blue_btn {font-size:14px;}
+.login_form ul li a.blue_btn:hover {text-decoration: underline;}
 .login_form ul li a.submit_btn {width:100%;background: #cb0006;line-height:46px;font-size:16px;color:#fff;text-align: center;display: inline-block;border-radius: 5px;margin-top:30px;}
 .login_form ul li a.submit_btn:hover {background: #b40005;}
-.login_form ul li button.submit_btn {width:100%;outline: none; border:none;cursor: pointer; background: #cb0006;line-height:46px;font-size:16px;color:#fff;text-align: center;display: inline-block;border-radius: 5px;margin-top:30px;}
+.login_form ul li button.submit_btn {width:100%;outline: none; border:none;cursor: pointer; background: #cb0006;line-height:46px;font-size:16px;color:#fff;text-align: center;display: inline-block;border-radius: 5px;margin-top:10px;}
 .login_form ul li button.submit_btn:hover {background: #b40005;}
 .login_form ul li .hide {display: none;}
 
@@ -431,6 +434,78 @@ label.label_check.on,label.all_check_label.on {border: 1px solid #3c8bd0;backgro
 .address_pop .content .login_form ul li .region_check select.error {border:1px solid #d9344c;}
 .address_pop .content .login_form ul li .region_check select {background: url(../images/ic_down_1.png) no-repeat 97% 20px #ffffff\9\0;}
 
+/*登录注册*/
+.login_box {width:1140px;margin:90px auto;background: #fff;box-shadow: 0px 0px 14px #ddd;}
+.login_box .title_name {font-size:36px;line-height:36px;color:#333;text-align: center;margin-bottom:30px;padding-top:30px;}
+.login_con {width:362px;height:540px;float:right;padding:0px 40px;position: relative;}
+.login_con .login_form ul li input.input_1 {width:336px;background: #f5f5f5;}
+
+.thirdly_login {width:362px;position: absolute;bottom:10px;left:40px;}
+.thirdly_login .title {background: url(../images/fg_bg.jpg) repeat-x;text-align: center;font-size:16px;color:#999;}
+.thirdly_login .title span {background: #fff;display: inline-block;padding:0px 14px;}
+.thirdly_login .more_login_ul {width: 50%;display: table;content: "";padding: 5% 25%;}
+.thirdly_login .more_login_ul li {width: 50%;float: left;text-align: center;}
+
+.register_box {padding:54px 0px;}
+.register_box .title_name {font-size:36px;line-height:36px;color:#333;text-align: center;margin-bottom:42px;padding-top:10px;}
+.register_1 {width:500px;border-right:1px solid #f5f5f5;padding:0px 165px;}
+.register_1 ul li {margin-bottom:14px;}
+.register_1 ul li input.input_1 {background: #f5f5f5;border: 1px solid #f5f5f5;}
+.register_1 ul li .write_con {position: relative;}
+.register_1 ul li .write_con span.rightIcon {width:27px;height:27px;background: url(../images/ic_right.png) no-repeat;position: absolute;top:15px;right:14px;}
+.register_1 ul li input.checkCode {width:340px;}
+.register_1 ul li span.getCode {width:120px;margin-top:6px;cursor: pointer;float:right;font-size:16px;text-align:center;background: #cb0006;line-height:46px;color:#fff;border-radius: 5px;}
+.register_1 ul li span.getCode:hover {background: #b40005;}
+.register_1 ul li input.input_check {width:16px;height:16px;float:left;margin-top:5px;margin-right:6px;}
+.register_1 ul li label.label_check.on {border:1px solid #3c8bd0;background: url(../images/ic_right_2.png) no-repeat center #3c8bd0;}
+.login_form ul li input.get_code {cursor: pointer;outline: none; height: 46px; border: none; border-radius: 4px; background: #cb0006; color: #FFF; width: 120px; text-align: center; margin-left: 13px; display: inline;}
+.login_form ul li input.get_code:hover {background: #b40005;}
+
+.clause_pop {width:86%;max-width:1000px; border-radius: 5px;background: #fff;margin:0 auto;margin-top:1%;}
+.clause_pop .title {width:100%;height:60px;line-height:60px;position: relative; background: #cb0006;font-size:18px;color:#fff;text-align: center;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.clause_pop .title a.close_btn {width:18px;height:18px;background: url(../images/ic_close.png) no-repeat;position: absolute;top:21px;right:20px;}
+.clause_pop .content {padding:40px 50px;padding-bottom:30px;}
+.clause_pop .content .clause_con {height:326px;line-height:20px;overflow-y: auto;}
+.clause_pop .content .clause_con p.wz {margin-bottom:22px;}
+.clause_pop .content .clause_con p.tem {text-indent: 1.4em;}
+.clause_pop .content a.btn {width:260px;background: #cb0006;line-height:46px;font-size:16px;color:#fff;text-align: center;display: inline-block;border-radius: 5px;margin-top:20px;}
+.clause_pop .content a.btn:hover {background: #b40005;}
+
+.account_login {width:260px;padding:120px 0px 0px 0px;float:right;}
+.account_login .con_1 {margin-bottom:45px;}
+.account_login .con_1 p.wz {font-size:14px;color:#9d9d9d;margin-bottom:8px;}
+.account_login .con_1 a.login_btn {line-height:36px;border:1px solid #eeeeee;border-radius: 5px;padding:0px 30px;display: inline-block;font-size:14px;color:#cb0006;}
+.account_login .con_1 a.login_btn:hover {background: #cb0006;border:1px solid #cb0006;color:#fff;}
+.account_login .con_2 p.wz {font-size:14px;color:#9d9d9d;margin-bottom:8px;}
+.account_login .con_2 .cz_login a {width:38px;margin-right:20px;display: inline-block;}
+.account_login .con_2 .cz_login a img {width:100%;}
+
+.joint_box {padding:30px 60px 100px 60px;}
+.joint_box .title_name {border-bottom:1px solid #f5f5f5;padding-bottom:45px;color:#cb0006;}
+.xg_form_1 .login_form {width:500px;margin:0px auto;}
+.xg_form_1 .login_form ul li input.input_1 {background: #f5f5f5;border: 1px solid #f5f5f5;}
+.xg_form_1 .login_form ul li input.checkCode {width:340px;}
+
+.password_box {padding:30px 60px 100px 60px;}
+.password_box .title_name {padding-bottom:15px;color:#cb0006;}
+.password_lc {border-bottom:1px solid #e6e6e6;text-align: center;margin-bottom:50px;}
+.password_lc li {width:180px;display: inline-block;font-size:16px;padding-bottom:15px;margin-bottom:-1px;}
+.password_lc li.on {padding-bottom:0px;border-bottom:2px solid #d9344c;padding-bottom:13px;}
+.password_lc li span.num {width:24px;height:24px;background: #ccc;color:#fff;border-radius: 50%;display: inline-block;font-size:14px;font-weight:bold;margin-right:10px;}
+.password_lc li.on {color:#d9344c;}
+.password_lc li.on span.num {background: #d9344c;}
+.password_lc li.current {color:#e3808e;}
+.password_lc li.current span.num {background: #e3808e;}
+.password_lc li span.icon {width:24px;height:24px;background: url(../images/ic_28.png) no-repeat;display: inline-block;margin-right:9px;text-indent: -9999px;}
+.password_lc li.on span.icon {background: url(../images/ic_29.png) no-repeat;}
+
+.password_success {margin:90px 0px 50px 0px;}
+.password_success .password_wz {text-align: center;line-height:64px;}
+.password_success .password_wz span {display: inline-block;font-size:24px;color:#0072bc;padding-left:80px;background: url(../images/ic_27.png) no-repeat left;}
+.password_success a.btn {width:190px;line-height:46px;font-size:16px;color:#fff;text-align: center;display: inline-block;border-radius: 5px;margin-top:50px;}
+
+
+
 /**/
 .qr_order_box {padding:35px;}
 .qr_order_box .qr_infor {font-size:14px;line-height:32px;background: url(../images/ic_26.png) no-repeat 0px 1px;padding-left:46px;border-bottom:1px solid #f5f5f5;padding-bottom:30px;}
@@ -449,19 +524,6 @@ label.label_check.on,label.all_check_label.on {border: 1px solid #3c8bd0;backgro
 .pay_success .cz a {margin:0px 10px;}
 .pay_success .fx {text-align: center;margin-top:50px;padding-left:428px;}
 .pay_success .fx .jiathis_txt {font-size:14px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*订单结算*/
 .shopping_process {background: #fff;margin-top:-10px;}
