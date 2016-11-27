@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>订单详情</title>
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="top_box">
+        <div class="index_box">
+            <span class="wz">亲，欢迎进入百淬中国商城！</span><a href="login.html">请登录</a><span class="fg">|</span><a href="register.html">免费注册</a><span class="fg">|</span>
+            <div class="mobile_con">
+                <span class="ic_mobile">手机逛百淬</span>
+                <div class="code_pd">
+                    <div id="code"></div>
+                </div>
+            </div>
+            <span class="right"><a href="">我的百淬</a><span class="fg">|</span><a href="my_car.html" id="shopcartId">我的购物车(<span class="mes_nub">4</span>)</a><span class="fg">|</span><a href="">收藏夹</a><span class="fg">|</span><a href="help.html">帮助中心</a></span>
+        </div>
+    </div>
+    <div class="head_box">
+        <div class="index_box">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <div class="nav_box">
+                <ul id="nav">
+                    <li class="nLi"><h3><a href="index.html">百淬首页</a></h3></li>
+                    <li class="nLi">
+                        <h3><a href="ydbj.html">运动补给<em></em></a></h3>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="product_list.html">运动饮料</a></li>
+                            <li><a href="product_list.html">乳清蛋白</a></li>
+                            <li><a href="product_list.html">植物蛋白</a></li>
+                            <li><a href="product_list.html">恢复配方</a></li>
+                            <li><a href="product_list.html">能量棒</a></li>
+                            <li><a href="product_list.html">饮料杯</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi"><h3><a href="ydzb.html">运动周边</a></h3></li>
+                    <li class="nLi"><h3><a href="bcsq.html">百淬社区</a></h3></li>
+                    <li class="nLi"><h3><a href="news.html">最新动态</a></h3></li>
+                    <li class="nLi"><h3><a href="dzzs.html">定制专属</a></h3></li>
+                    <li class="nLi"><h3><a href="ppgs.html">品牌故事</a></h3></li>
+                    <li class="search_li"><a href="search.html" class="search_btn"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="index_box">
+        <div class="person_menu left">
+            <div class="menu_con">
+                <div class="menu_name on"><span class="ic_1">订单记录</span></div>
+                <ul class="p_menu">
+                    <li class="on"><a href="person_order.html" class="ic_1">我的订单</a></li>
+                    <li><a href="my_coupon.html" class="ic_2">我的优惠券</a></li>
+                    <li><a href="person_pay.html" class="ic_3">我要充值</a></li>
+                    <li><a href="order_evaluate.html" class="ic_4">评价晒单</a></li>
+                </ul>
+            </div>
+            <div class="menu_con">
+                <div class="menu_name"><span class="ic_2">个人信息查询</span></div>
+                <ul class="p_menu">
+                    <li><a href="person_infor.html" class="ic_5">我的资料</a></li>
+                    <li><a href="person_address.html" class="ic_6">快递地址</a></li>
+                    <li><a href="password_modif.html" class="ic_11">密码修改</a></li>
+                    <li><a href="my_evaluate.html" class="ic_7">我的评论</a></li>
+                    <li><a href="my_invitation.html" class="ic_8">我的帖子</a></li>
+                    <li><a href="my_reply.html" class="ic_9">我的回复</a></li>
+                    <li><a href="my_collect.html" class="ic_10">我的收藏</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="person_con_1 right">
+            <div class="order_con">
+                <p class="wz">订单概况</p>
+                <!-- 商品出库 -->
+                <div class="order_mx"><span class="wz">订单号：15012152685219</span><span class="wz">状态：<span class="blue">商品出库</span></span></div>
+                <!-- 待付款 -->
+                <!-- <div class="order_mx"><span class="wz">订单号：15012152685219</span><span class="wz">状态：<span class="blue">待付款</span></span><a href="" class="btn_1">付款</a></div> -->
+            </div>
+            <div class="order_con">
+                <p class="wz">订单跟踪</p>
+                <div class="con_1">
+                    <!-- bp_1至bp_5：代表流程1-5 -->
+                    <ul class="order_lc bp_3">
+                        <li class="n_1 on">提交订单</li>
+                        <li class="n_2 on">付款成功</li>
+                        <li class="n_3 on">商品出库</li>
+                        <li class="n_4">等待收货</li>
+                        <li class="n_5">完成</li>
+                    </ul>
+                    <div class="blank20"></div>
+                    <div class="order_xx">
+                        <ul class="">
+                            <li>
+                                <span class="time">处理时间</span>
+                                <p class="xx">处理信息</p>
+                            </li>
+                            <li>
+                                <span class="time">2015-01-21 07：05:27</span>
+                                <p class="xx">您的订单已经提交，商品预计在01月24号（周六）前送达</p>
+                            </li>
+                            <li>
+                                <span class="time">2015-01-21 07：05:27</span>
+                                <p class="xx">您已经支付成功，您选择的支付方式为：桔柚钱包</p>
+                            </li>
+                            <li>
+                                <span class="time">2015-01-21 07：05:27</span>
+                                <p class="xx">订单已经打印完毕，正在拣货中</p>
+                            </li>
+                        </ul>
+                        <ul class="">
+                            <li>送货方式：快递</li>
+                            <li>物流公司：顺丰快递</li>
+                            <li>快递单号：31254810</li>
+                            <li>快递查询：快递100</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="order_con">
+                <p class="wz">订单信息</p>
+                <div class="con_1">
+                    <div class="order_xx_1">
+                        <div class="nt_con">
+                            <p class="fs14">收货人信息</p>
+                            <p>收货人：刘洁</p>
+                            <p>地址：广东省 深圳市 南山区 南山街道 南海大道海王大厦A座6D</p>
+                            <p>手机号码：13902988824</p>
+                            <p>电子邮箱：121652456@qq.com</p>
+                        </div>
+                        <div class="nt_con">
+                            <p class="fs14">支付及配送方式</p>
+                            <p class="">支付方式：在线支付</p>
+                            <p class="">运费：￥10.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_con">
+                <p class="wz">商品清单</p>
+                <div class="con_1">
+                    <table class="order_table">
+                        <tr>
+                            <th width="120">订单信息</th>
+                            <th width="160">&nbsp;</th>
+                            <th width="160">商品编号</th>
+                            <th width="150">订单金额</th>
+                            <th width="150">商品数量</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="tr_bg_2 tr_2">
+                            <td>
+                                <div class="pt"><img src="images/order_pt1.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <div class="con">
+                                    <p class="name"><a href="product_detail.html">百淬恢复配方运动补给</a></p>
+                                    <p class="mx">规格：素食主义</p>
+                                    <p class="mx">颜色：巧克力味</p>
+                                </div>
+                            </td>
+                            <td>11688318</td>
+                            <td>￥159.00</td>
+                            <td>1</td>
+                            <td>
+                                <a href="person_evaluate.html" class="blue_btn">评价</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="blank_1" colspan="6"></td>
+                        </tr>
+                        <tr class="tr_bg_2 tr_2">
+                            <td>
+                                <div class="pt"><img src="images/order_pt1.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <div class="con">
+                                    <p class="name"><a href="product_detail.html">百淬恢复配方运动补给</a></p>
+                                    <p class="mx">规格：素食主义</p>
+                                    <p class="mx">颜色：巧克力味</p>
+                                </div>
+                            </td>
+                            <td>11688318</td>
+                            <td>￥159.00</td>
+                            <td>1</td>
+                            <td>
+                                <a href="person_evaluate.html" class="blue_btn">评价</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="blank_1" colspan="6"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="account_con_1 tar">
+                <p class="wz_1">商品金额：￥283.00<br />
+                运费：￥10.00<br />
+                商品优惠：-￥10.00<br />
+                优惠券：-￥10.00
+                </p>
+                <p class="wz_2">订单支付金额：<span class="price">￥283.00</span></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="bc_service">
+        <div class="service_list index_box">
+            <ul>
+                <li>
+                    <div class="con n_1">
+                        <p class="name">正品保证</p>
+                        <p class="wz">平台信誉 品牌保证</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_2">
+                        <p class="name">全球直供</p>
+                        <p class="wz">海外货源 购物无境</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_3">
+                        <p class="name">优质品牌</p>
+                        <p class="wz">名品荟萃 优质大牌</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_4">
+                        <p class="name">售后保障</p>
+                        <p class="wz">专业客服 售后无忧</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bc_help">
+        <div class="index_box">
+            <div class="help_list">
+                <dl>
+                    <dt>海外保证</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">海外直供</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">购物须知</a></dd>
+                    <dd><a href="">售后规则</a></dd>
+                    <dd><a href="">帮助中心</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">支付宝支付</a></dd>
+                    <dd><a href="">微信支付</a></dd>
+                    <dd><a href="">银行卡支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd><a href="">平台规则</a></dd>
+                    <dd><a href="">商家入驻</a></dd>
+                    <dd><a href="">服务商入驻</a></dd>
+                    <dd><a href="">关于我们</a></dd>
+                </dl>
+            </div>
+            <div class="tel_pt"><img src="images/tele_pt.png" alt=""></div>
+            <div class="code_pt"><img src="images/code_pt.jpg" alt=""></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bc_copyright_info">版权所有 Copyright(C)2014   百淬商城 </div>
+
+    <script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/swiper.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="text/javascript" src="js/func.js"></script>
+</body>
+</html>

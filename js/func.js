@@ -176,11 +176,62 @@ $(function(){
 			$(this).removeClass("on");
 		}
 	});
+
+	// person
+	if($(".person_con_1").height()+80>$(".person_menu").height()){
+		$(".person_menu").height($(".person_con_1").height()+40);
+	}
+
+	$(".order_delete_btn").click(function(){
+		var newsCon = $(this).parents("tr.parent_tr");
+		popRemind('orderDeletePop');
+
+		$(".order_qr_btn").unbind("click");
+		$(".order_qr_btn").click(function(){
+			closePopFunc(this);
+			newsCon.remove();
+		});
+	});
+
+	$(".order_fl_ul>li").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var index = $(this).index();
+		$(".order_fl_list>div").eq(index).removeClass("dn").siblings().addClass("dn");
+	});
+
+	$(".upload_pt_ul i.ic_delete").click(function(){
+		$(this).parents("li").remove();
+	});
+
+	$(".tag_delete_btn").click(function(){
+		var newsCon = $(this).parents("li");
+		popRemind('tagDeletePop');
+
+		$(".tag_qr_btn").unbind("click");
+		$(".tag_qr_btn").click(function(){
+			closePopFunc(this);
+			newsCon.remove();
+		});
+	});
+
+	$(".tag_menu>a").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var index = $(this).index();
+		$(".tag_all_box>div").eq(index).removeClass("dn").siblings().addClass("dn");
+	});
+
+	$(".sex_list>a").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+	});
 });
 
 // 弹出框
 function popRemind(id){
     $("#" + id).css("display","block");
+}
+
+function closeWindow(id){
+    $("#" + id).css("display","none");
 }
 
 // 关闭弹出框

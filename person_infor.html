@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>我的资料</title>
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="top_box">
+        <div class="index_box">
+            <span class="wz">亲，欢迎进入百淬中国商城！</span><a href="login.html">请登录</a><span class="fg">|</span><a href="register.html">免费注册</a><span class="fg">|</span>
+            <div class="mobile_con">
+                <span class="ic_mobile">手机逛百淬</span>
+                <div class="code_pd">
+                    <div id="code"></div>
+                </div>
+            </div>
+            <span class="right"><a href="">我的百淬</a><span class="fg">|</span><a href="my_car.html" id="shopcartId">我的购物车(<span class="mes_nub">4</span>)</a><span class="fg">|</span><a href="">收藏夹</a><span class="fg">|</span><a href="help.html">帮助中心</a></span>
+        </div>
+    </div>
+    <div class="head_box">
+        <div class="index_box">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <div class="nav_box">
+                <ul id="nav">
+                    <li class="nLi"><h3><a href="index.html">百淬首页</a></h3></li>
+                    <li class="nLi">
+                        <h3><a href="ydbj.html">运动补给<em></em></a></h3>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="product_list.html">运动饮料</a></li>
+                            <li><a href="product_list.html">乳清蛋白</a></li>
+                            <li><a href="product_list.html">植物蛋白</a></li>
+                            <li><a href="product_list.html">恢复配方</a></li>
+                            <li><a href="product_list.html">能量棒</a></li>
+                            <li><a href="product_list.html">饮料杯</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi"><h3><a href="ydzb.html">运动周边</a></h3></li>
+                    <li class="nLi"><h3><a href="bcsq.html">百淬社区</a></h3></li>
+                    <li class="nLi"><h3><a href="news.html">最新动态</a></h3></li>
+                    <li class="nLi"><h3><a href="dzzs.html">定制专属</a></h3></li>
+                    <li class="nLi"><h3><a href="ppgs.html">品牌故事</a></h3></li>
+                    <li class="search_li"><a href="search.html" class="search_btn"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="index_box">
+        <div class="person_menu left">
+            <div class="menu_con">
+                <div class="menu_name"><span class="ic_1">订单记录</span></div>
+                <ul class="p_menu">
+                    <li><a href="person_order.html" class="ic_1">我的订单</a></li>
+                    <li><a href="my_coupon.html" class="ic_2">我的优惠券</a></li>
+                    <li><a href="person_pay.html" class="ic_3">我要充值</a></li>
+                    <li><a href="order_evaluate.html" class="ic_4">评价晒单</a></li>
+                </ul>
+            </div>
+            <div class="menu_con">
+                <div class="menu_name on"><span class="ic_2">个人信息查询</span></div>
+                <ul class="p_menu">
+                    <li class="on"><a href="person_infor.html" class="ic_5">我的资料</a></li>
+                    <li><a href="person_address.html" class="ic_6">快递地址</a></li>
+                    <li><a href="password_modif.html" class="ic_11">密码修改</a></li>
+                    <li><a href="my_evaluate.html" class="ic_7">我的评论</a></li>
+                    <li><a href="my_invitation.html" class="ic_8">我的帖子</a></li>
+                    <li><a href="my_reply.html" class="ic_9">我的回复</a></li>
+                    <li><a href="my_collect.html" class="ic_10">我的收藏</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="person_con_1 right">
+            <div class="login_form" style="margin-top:30px;">
+                <form id="signupForm" method="post" action="">
+                    <ul>
+                        <li class="head_con">
+                            <p class="name">我的头像</p>
+                            <div class="tx">
+                                <div id="view" style="background: url(images/tx_pt_1.jpg) no-repeat center;background-size: 100%;"></div>
+                                <span class="file_tx" onclick="popRemind('uploadPopId');">上传头像</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="name">用户名</p>
+                            <p><input type="text" class="reg_input input_1" disabled="disabled" value="放羊的星星"></p>
+                        </li>
+                        <li>
+                            <p class="name">手机号</p>
+                            <p><input type="text" class="reg_input input_1" disabled="disabled" value="13433311558"></p>
+                        </li>
+                        <li>
+                            <p class="name">性别</p>
+                            <p class="sex_list"><a href="javascript:void(0);" class="sex_1">女性</a><a href="javascript:void(0);" class="sex_2 on">男性</a></p>
+                        </li>
+                        <li>
+                            <p class="name">生日</p>
+                            <p class="birthday_check" id="birthday_container"><select class="select_year" name="year"></select><select name="month"></select><select name="day"></select></p>
+                        </li>
+                        <li>
+                            <p class="name">微信号/QQ</p>
+                            <p><input type="text" id="wx_qq" name="wx_qq" class="input_1" style="background: #fff;" placeholder="微信号/QQ"></p>
+                        </li>
+                        <li>
+                            <p class="name">电子邮箱</p>
+                            <p><input type="text" id="email" name="email" class="input_1" style="background: #fff;" placeholder="beanz@beanz.cn"></p>
+                        </li>
+                        <li><button class="submit_btn">提交</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="bc_service">
+        <div class="service_list index_box">
+            <ul>
+                <li>
+                    <div class="con n_1">
+                        <p class="name">正品保证</p>
+                        <p class="wz">平台信誉 品牌保证</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_2">
+                        <p class="name">全球直供</p>
+                        <p class="wz">海外货源 购物无境</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_3">
+                        <p class="name">优质品牌</p>
+                        <p class="wz">名品荟萃 优质大牌</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="con n_4">
+                        <p class="name">售后保障</p>
+                        <p class="wz">专业客服 售后无忧</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bc_help">
+        <div class="index_box">
+            <div class="help_list">
+                <dl>
+                    <dt>海外保证</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">海外直供</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">购物须知</a></dd>
+                    <dd><a href="">售后规则</a></dd>
+                    <dd><a href="">帮助中心</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">支付宝支付</a></dd>
+                    <dd><a href="">微信支付</a></dd>
+                    <dd><a href="">银行卡支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd><a href="">平台规则</a></dd>
+                    <dd><a href="">商家入驻</a></dd>
+                    <dd><a href="">服务商入驻</a></dd>
+                    <dd><a href="">关于我们</a></dd>
+                </dl>
+            </div>
+            <div class="tel_pt"><img src="images/tele_pt.png" alt=""></div>
+            <div class="code_pt"><img src="images/code_pt.jpg" alt=""></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bc_copyright_info">版权所有 Copyright(C)2014   百淬商城 </div>
+
+    <!-- 消息提示 -->
+    <div class="wrapper_box message_pop dn" id="ts_wrapperPopId">
+        <div class="shopping_pop">
+            <div class="title tac">消息提示</div>
+            <div class="content tac">
+                <div><span class="tb_wz">修改成功！</span></div>
+                <p class="cz tac"><a href="javascript:void(0);" onclick="closePopFunc(this);" class="red_btn_1">确定</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 上传图片弹出框 -->
+    <div class="wrapper_box dn" id="uploadPopId">
+        <div class="upload_pop">
+            <div class="title">上传图片</div>
+            <div id="clipArea"></div>
+            <div class="cz_btn">
+                <input type="file" id="file">
+                <button id="clipBtn">确定</button>
+                <a href="javascript:void(0);" onclick="closePopFunc(this);" class="qx_btn">取消</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/swiper.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="text/javascript" src="js/func.js"></script>
+    <script type="text/javascript" src="js/placeholder.js"></script>
+    <script type="text/javascript" src="js/birthday.js"></script>
+    
+    <!-- 上传图片插件 -->
+    <script type="text/javascript" src="js/uploadPt/iscroll-zoom.js"></script>
+    <script type="text/javascript" src="js/uploadPt/hammer.js"></script>
+    <script type="text/javascript" src="js/uploadPt/lrz.all.bundle.js"></script>
+    <script type="text/javascript" src="js/uploadPt/jquery.photoClip.js"></script>
+
+    <!-- form 判断插件 -->
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/validate-methods.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        // 上传图片
+        var clipArea = new bjj.PhotoClip("#clipArea", {
+            size: [260, 260],
+            outputSize: [640, 640],
+            file: "#file",
+            view: "#view",
+            ok: "#clipBtn",
+            loadStart: function() {
+                console.log("照片读取中");
+            },
+            loadComplete: function() {
+                console.log("照片读取完成");
+            },
+            clipFinish: function(dataURL) {
+                console.log(dataURL);
+                closeWindow('uploadPopId');
+            }
+        });
+
+        // 生日插件
+        new YMDselect('year','month','day');
+
+        $("#signupForm").validate({
+            onfocusout: function(element) {
+                $(element).valid();
+            },
+            errorPlacement: function(error, element) { //错误信息位置设置方法
+                error.appendTo(element.parents("li")); //这里的element是录入数据的对象
+            },
+            submitHandler: function(form){   //表单提交句柄,为一回调函数，带一个参数：form
+                $("#ts_wrapperPopId").show();
+                // form.submit();   //提交表单
+            }, 
+            rules: {
+                email: {
+                    required: false,
+                    email: true
+                }
+            },
+            messages: {
+                email: {
+                    required: "请输入正确的电子邮箱"
+                }
+            }
+        })
+    })
+    </script>
+</body>
+</html>

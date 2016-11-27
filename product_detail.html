@@ -97,8 +97,33 @@
                     </div>
                 </div>
                 <div class="pro_num_check">
-                    <span class="wz">数量：</span>
-                    <div class="num_con"><a href="javascript:void(0);" class="reduce_btn ca_minus_1"></a><input type="text" class="input_1" name="dhInputName" value="1" onfocus="this.blur()"><a href="javascript:void(0);" class="ca_plus_1 add_btn"></a></div>
+                    <div class="con_mx">
+                        <span class="wz">颜色：</span>
+                        <ul class="check_mx_ul">
+                            <li class="on"><span class="ic"></span><i><img src="images/product_pt7.jpg" alt=""></i>巧克力味</li>
+                            <li><span class="ic"></span><i><img src="images/product_pt6.jpg" alt=""></i>草莓味</li>
+                            <li><span class="ic"></span><i><img src="images/product_pt7.jpg" alt=""></i>香草味</li>
+                        </ul>
+                    </div>
+                    <div class="con_mx">
+                        <span class="wz">规格：</span>
+                        <ul class="check_mx_ul">
+                            <li class="on"><span class="ic"></span><i><img src="images/product_pt7.jpg" alt=""></i>素食主义</li>
+                            <li><span class="ic"></span><i><img src="images/product_pt6.jpg" alt=""></i>热带水果味</li>
+                            <li><span class="ic"></span><i><img src="images/product_pt7.jpg" alt=""></i>原味</li>
+                        </ul>
+                        
+                        <!-- 没有小图标 -->
+                        <!-- <ul class="check_mx_ul_1">
+                            <li class="on"><span class="ic"></span>素食主义</li>
+                            <li><span class="ic"></span>热带水果味</li>
+                            <li><span class="ic"></span>原味</li>
+                        </ul> -->
+                    </div>
+                    <div class="con_num">
+                        <span class="wz">数量：</span>
+                        <div class="num_con"><a href="javascript:void(0);" class="reduce_btn ca_minus_1"></a><input type="text" class="input_1" name="dhInputName" value="1" onfocus="this.blur()"><a href="javascript:void(0);" class="ca_plus_1 add_btn"></a></div>
+                    </div>
                 </div>
                 <div class="cz"><a href="javascript:void(0);" class="btn_1 addcar">加入购物车</a><a href="order_information.html" class="btn_2">直接购买</a><a href="javascript:void(0);" class="scj_btn">加入收藏夹</a>
                 </div>
@@ -371,6 +396,15 @@
             });
             $("#mobile_code").append(qrnode);
         }
+
+        // 选择颜色/规格
+        $(".check_mx_ul>li").click(function(){
+            $(this).addClass("on").siblings().removeClass("on");
+        });
+
+        $(".check_mx_ul_1>li").click(function(){
+            $(this).addClass("on").siblings().removeClass("on");
+        });
     });
     </script>
 </body>

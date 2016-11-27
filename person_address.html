@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="format-detection" content="telephone=no" />
-<title>订单结算</title>
+<title>快递地址</title>
 <link rel="stylesheet" href="css/swiper.css" type="text/css" />
 <link href="css/css.css" rel="stylesheet" type="text/css">
 </head>
@@ -53,152 +53,105 @@
         </div>
     </div>
     <div class="index_box">
-        <div class="ot_title_box"><span class="ic_2">订单结算</span></div>
-        <div class="shopping_process">
-            <div class="process_con">
-                <div class="title"><span class="ic_1">选择收货地址</span><a href="javascript:void(0);" class="add_address">+新增收货地址</a></div>
-                <div class="">
-                    <ul class="address_item">
-                        <li class="current"><span class="n_1"><input type="radio" name="address-item" class="orderBox" checked="true">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
-                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
-                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
-                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
-                        <li><span class="n_1"><input type="radio" name="address-item" class="orderBox">小红</span><span class="n_2">广东省-广州市-天河区-莲上镇涂城乡塔山路口</span><span class="n_3">13521456852</span><span class="n_4"><a href="javascript:void(0);" class="update_address">修改</a><a href="javascript:void(0);" class="delete_address">删除</a></span></li>
-                    </ul>
-                    <p class="more_address"><a href="javascript:void(0);">更多地址</a></p>
-                </div>
+        <div class="person_menu left">
+            <div class="menu_con">
+                <div class="menu_name"><span class="ic_1">订单记录</span></div>
+                <ul class="p_menu">
+                    <li><a href="person_order.html" class="ic_1">我的订单</a></li>
+                    <li><a href="my_coupon.html" class="ic_2">我的优惠券</a></li>
+                    <li><a href="person_pay.html" class="ic_3">我要充值</a></li>
+                    <li><a href="order_evaluate.html" class="ic_4">评价晒单</a></li>
+                </ul>
             </div>
-            <div class="blank10"></div>
-            <div class="process_con">
-                <div class="title"><span class="ic_2">支付方式</span></div>
-                <div class="pay_ment">
-                    <ul>
-                        <li>
-                            <label title="支付宝"><input name="payment" type="radio" checked="checked"><b><img src="images/pay_pt1.jpg" alt=""></b></label>
-                        </li>
-                        <li>
-                            <label title="微信"><input name="payment" type="radio"><b><img src="images/pay_pt2.jpg" alt=""></b></label>
-                        </li>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
+            <div class="menu_con">
+                <div class="menu_name on"><span class="ic_2">个人信息查询</span></div>
+                <ul class="p_menu">
+                    <li><a href="person_infor.html" class="ic_5">我的资料</a></li>
+                    <li class="on"><a href="person_address.html" class="ic_6">快递地址</a></li>
+                    <li><a href="password_modif.html" class="ic_11">密码修改</a></li>
+                    <li><a href="my_evaluate.html" class="ic_7">我的评论</a></li>
+                    <li><a href="my_invitation.html" class="ic_8">我的帖子</a></li>
+                    <li><a href="my_reply.html" class="ic_9">我的回复</a></li>
+                    <li><a href="my_collect.html" class="ic_10">我的收藏</a></li>
+                </ul>
             </div>
-            <div class="process_con">
-                <div class="title"><span class="ic_3">商品清单</span></div>
-                <table class="order_table_2">
-                    <tr>
-                        <th width="16%">商品信息</th>
-                        <th width="24%">&nbsp;</th>
-                        <th width="15%">单价(元)</th>
-                        <th width="15%">数量</th>
-                        <th>小计</th>
-                        <th>货物情况</th>
+        </div>
+        <div class="person_con_1 right">
+            <table class="order_table_1">
+                <tr>
+                    <th width="120">收货人</th>
+                    <th width="240">收货地址</th>
+                    <th width="150">邮政编码</th>
+                    <th width="150">联系电话</th>
+                    <th width="130">操作</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </table>
+            <div class="address_list">
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
                     </tr>
-                    <tr class="tr_bg_1">
-                        <td class="infor_pt"><a href=""><img src="images/product_pt13.png" alt=""></a></td>
-                        <td class="tal">
-                            <p class="name">BioSteel(百淬)高效能运动饮料固体饮料冲剂14条/盒</p>
-                            <p class="mx">规格：素食主义</p>
-                            <p class="mx">颜色：巧克力味</p>
-                        </td>
-                        <td>199.00</td>
-                        <td>1</td>
-                        <td>199.00</td>
-                        <td>有货</td>
+                </table>
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
                     </tr>
-                    <tr>
-                        <td class="blank" colspan="6"></td>
+                </table>
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
                     </tr>
-                    <tr class="tr_bg_1">
-                        <td class="infor_pt"><a href=""><img src="images/product_pt13.png" alt=""></a></td>
-                        <td class="tal">
-                            <p class="name">BioSteel(百淬)高效能运动饮料固体饮料冲剂14条/盒</p>
-                            <p class="mx">规格：素食主义</p>
-                            <p class="mx">颜色：巧克力味</p>
-                        </td>
-                        <td>199.00</td>
-                        <td>1</td>
-                        <td>199.00</td>
-                        <td>有货</td>
+                </table>
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
                     </tr>
-                    <tr>
-                        <td class="blank" colspan="6"></td>
+                </table>
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
+                    </tr>
+                </table>
+                <table class="order_table_1">
+                    <tr class="tr_bg_2">
+                        <td width="120">丁利明11</td>
+                        <td width="240">北京市海淀区北四环西路中关村<br />辉煌时代大厦2层</td>
+                        <td width="150">100007</td>
+                        <td width="150">187****8318</td>
+                        <td width="130" class="address_cz"><a href="javascript:void(0);" class="address_xg_btn"></a><a href="javascript:void(0);" class="address_delete_btn"></a></td>
+                        <td class="address_mr"><a href="javascript:void(0);">设为默认</a></td>
                     </tr>
                 </table>
             </div>
-            <div class="process_con">
-                <div class="title"><span class="ic_4">优惠券</span></div>
-                <div class="coupon_list">
-                    <ul>
-                        <li>
-                            <div class="con">
-                                <span class="ic"></span>
-                                <p class="price_wz">￥<span class="price">10</span></p>
-                                <p class="wz">满100即可使用</p>
-                            </div>
-                            <div class="cz">
-                                <p class="bh">劵编号：512145775</p>
-                                <p class="tac"><a href="" class="btn">立即使用</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="con">
-                                <span class="ic"></span>
-                                <p class="price_wz">￥<span class="price">10</span></p>
-                                <p class="wz">满100即可使用</p>
-                            </div>
-                            <div class="cz">
-                                <p class="bh">劵编号：512145775</p>
-                                <p class="tac"><a href="" class="btn">立即使用</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="con">
-                                <span class="ic"></span>
-                                <p class="price_wz">￥<span class="price">10</span></p>
-                                <p class="wz">满100即可使用</p>
-                            </div>
-                            <div class="cz">
-                                <p class="bh">劵编号：512145775</p>
-                                <p class="tac"><a href="" class="btn">立即使用</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="con">
-                                <span class="ic"></span>
-                                <p class="price_wz">￥<span class="price">10</span></p>
-                                <p class="wz">满100即可使用</p>
-                            </div>
-                            <div class="cz">
-                                <p class="bh">劵编号：512145775</p>
-                                <p class="tac"><a href="" class="btn">立即使用</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="con">
-                                <span class="ic"></span>
-                                <p class="price_wz">￥<span class="price">10</span></p>
-                                <p class="wz">满100即可使用</p>
-                            </div>
-                            <div class="cz">
-                                <p class="bh">劵编号：512145775</p>
-                                <p class="tac"><a href="" class="btn">立即使用</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div class="address_add_cz tar"><a href="javascript:void(0);" class="red_btn_1" id="addAddress">新增收货地址</a></div>
         </div>
-        <div class="account_box tar fs16">
-            <p class="wz_3"><span class="red">3</span> 件商品，总商品金额：￥455.00<br />
-            运费：￥10.00<br />
-            服务费：￥0.00<br />
-            商品优惠：￥20.00
-            </p>
-            <p class="wz_4">应付总金额：<span class="all_price_1">￥465.00</span>元</p>
-            <div><a href="shopping_process_2.html" class="red_btn_1">提交订单</a></div>
-        </div>
-        <div class="blank60"></div>
+        <div class="clear"></div>
     </div>
     <div class="bc_service">
         <div class="service_list index_box">
@@ -265,6 +218,17 @@
         </div>
     </div>
     <div class="bc_copyright_info">版权所有 Copyright(C)2014   百淬商城 </div>
+    
+    <!-- 删除地址 -->
+    <div class="wrapper_box dn" id="addressCheckPop">
+        <div class="shopping_pop">
+            <div class="title tac"><span>删除地址</span></div>
+            <div class="content tac">
+                <div><span class="tb_wz">确认要删除该地址吗？</span></div>
+                <p class="cz tac"><a href="javascript:void(0);" class="address_delete_qr red_btn_1">确定</a><a href="javascript:void(0);" class="huise_btn_1" onClick="closePopFunc(this);">取消</a></p>
+            </div>
+        </div>
+    </div>
 
     <!-- 新增收货地址 -->
     <div class="wrapper_box wrapper_pa dn" id="addAddressPop">
@@ -312,13 +276,23 @@
     <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
     <script type="text/javascript" src="js/qrcode.js"></script>
     <script type="text/javascript" src="js/func.js"></script>
-    <script type="text/javascript" src="js/placeholder.js"></script>
     <script type="text/javascript" src="js/distpicker.js"></script>
     
     <script type="text/javascript" src="js/jquery.validate.js"></script>
     <script type="text/javascript" src="js/validate-methods.js"></script>
     <script type="text/javascript">
     $(function(){
+        $(".address_delete_btn").click(function(){
+            var addressCon = $(this).parents(".order_table_1");
+            popRemind('addressCheckPop');
+
+            $(".address_delete_qr").unbind("click");
+            $(".address_delete_qr").click(function(){
+                closePopFunc(this);
+                addressCon.remove();
+            });
+        });
+        
         $("#distpicker").distpicker({
             autoSelect: false,
             placeholder: false
@@ -396,19 +370,30 @@
             }
         });
 
-        $(".add_address").click(function(){
+        $("#addAddress").click(function(){
             $(".wrapper_pa").height($(document).height());
             $(".address_pop .title>span.ic_1").html("新增收货地址");
             popRemind('addAddressPop');
             addressTopFunc();
         });
 
-        $(".update_address").click(function(event){
-            event.stopPropagation();
+        $(".address_xg_btn").click(function(){
             $(".wrapper_pa").height($(document).height());
             $(".address_pop .title>span.ic_1").html("修改收货地址");
             popRemind('addAddressPop');
             addressTopFunc();
+        });
+
+        $(".address_mr>a").click(function(){
+            if($(this).attr("class") == "add_mr"){
+                return false;
+            }
+            $(".address_mr>a").removeAttr("style");
+            $(".address_mr>a").removeClass("add_mr");
+            $(".address_mr>a").html("设为默认");
+            $(this).addClass("add_mr");
+            $(this).html("默认地址");
+            $(this).css("display","block");
         });
     })
     </script>
