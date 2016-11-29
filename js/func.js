@@ -9,6 +9,16 @@ $(function(){
         $("#code").append(qrnode);
 	}
 
+	if($(".phone_code_box").length > 0){
+		var qrnode = new AraleQRCode({
+            render: 'canvas',
+            correctLevel: 0,
+            foreground:"#000000",
+            size: 120
+        });
+        $("#phoneCode").append(qrnode);
+	}
+
 	if($(".slideBox").length > 0){
 		var swiper = new Swiper('.slideBox', {
 			pagination: '.swiper-pagination',
@@ -222,6 +232,60 @@ $(function(){
 
 	$(".sex_list>a").click(function(){
 		$(this).addClass("on").siblings().removeClass("on");
+	});
+
+	if($(".sq_slide").length > 0){
+		var swiper = new Swiper('.sq_slide', {
+			pagination: '.swiper-pagination',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        centeredSlides:true,
+	        autoplay: 4500,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+	}
+
+	if($(".news_slide").length > 0){
+		var swiper = new Swiper('.news_slide', {
+			pagination: '.swiper-pagination',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        centeredSlides:true,
+	        autoplay: 4500,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+	}
+
+	$(".sc_btn").click(function(){
+		if($(this).attr("class") == "sc_btn"){
+			$(this).addClass("on");
+		}else{
+			$(this).removeClass("on");
+		}
+	});
+
+	$(".gz_btn").click(function(){
+		if($(this).attr("class") == "gz_btn"){
+			$(this).addClass("on");
+		}else{
+			$(this).removeClass("on");
+		}
+	});
+
+	$(".sq_sx_btn>a.btn_1").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var index = $(this).index();
+		$("#sqListConId>div").eq(index).removeClass("dn").siblings().addClass("dn");
+	});
+
+	$(".ic_phone_code").hover(function(){
+		$(".ic_phone_code .ic_p").addClass("on");
+		$(".phone_code_box").show();
+	},function(){
+		$(".ic_phone_code .ic_p").removeClass("on");
+		$(".phone_code_box").hide();
 	});
 });
 
